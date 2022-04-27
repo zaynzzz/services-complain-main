@@ -1,0 +1,118 @@
+CRITICAL - 2022-04-27 01:11:45 --> Invalid file: Notif.php
+#0 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Notif.php')
+#1 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Notif', Array, true)
+#2 C:\xampp\htdocs\services-complain-main\app\Views\Layout\template.php(268): view('Notif')
+#3 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Layout/template', Array, true)
+#6 C:\xampp\htdocs\services-complain-main\app\Controllers\Notif.php(12): view('Layout/template', Array)
+#7 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Notif->index()
+#8 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#9 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\services-complain-main\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-27 01:12:02 --> Invalid file: Notif.php
+#0 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Notif.php')
+#1 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Notif', Array, true)
+#2 C:\xampp\htdocs\services-complain-main\app\Views\Layout\template.php(268): view('Notif')
+#3 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Layout/template', Array, true)
+#6 C:\xampp\htdocs\services-complain-main\app\Controllers\Notif.php(12): view('Layout/template', Array)
+#7 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Notif->index()
+#8 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#9 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\services-complain-main\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-27 01:12:11 --> Invalid file: Notif.php
+#0 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Notif.php')
+#1 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Notif', Array, true)
+#2 C:\xampp\htdocs\services-complain-main\app\Views\Layout\template.php(268): view('Notif')
+#3 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Layout/template', Array, true)
+#6 C:\xampp\htdocs\services-complain-main\app\Controllers\Notif.php(12): view('Layout/template', Array)
+#7 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Notif->index()
+#8 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#9 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\services-complain-main\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-27 01:19:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1
+CRITICAL - 2022-04-27 01:19:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1
+#0 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * from p...', 0)
+#1 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from p...')
+#2 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from p...')
+#3 C:\xampp\htdocs\services-complain-main\app\Controllers\Notif.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * from p...')
+#4 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Notif->showmess()
+#5 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#6 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\services-complain-main\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-27 01:19:45 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Notif->showmess()
+#1 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#2 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\services-complain-main\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-27 01:21:45 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 264257536 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-27 01:24:03 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-27 01:24:49 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 264257536 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-27 01:25:57 --> Array to string conversion
+#0 C:\xampp\htdocs\services-complain-main\app\Controllers\Notif.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 13)
+#1 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Notif->showmess()
+#2 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#3 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\services-complain-main\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-27 01:26:37 --> Undefined array key ""
+#0 C:\xampp\htdocs\services-complain-main\app\Controllers\Notif.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 13)
+#1 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Notif->showmess()
+#2 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#3 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\services-complain-main\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-27 01:26:43 --> Undefined array key "idpesan"
+#0 C:\xampp\htdocs\services-complain-main\app\Controllers\Notif.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 13)
+#1 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Notif->showmess()
+#2 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#3 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\services-complain-main\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-27 01:27:02 --> Attempt to read property "idpesan" on array
+#0 C:\xampp\htdocs\services-complain-main\app\Controllers\Notif.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 13)
+#1 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Notif->showmess()
+#2 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#3 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\services-complain-main\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-27 01:28:08 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-27 01:29:16 --> Table 'gigasolusi.pesan' doesn't exist
+CRITICAL - 2022-04-27 01:29:16 --> Table 'gigasolusi.pesan' doesn't exist
+#0 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * from p...', 0)
+#1 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from p...')
+#2 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from p...')
+#3 C:\xampp\htdocs\services-complain-main\app\Controllers\Notif.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * from p...')
+#4 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Notif->jumlah()
+#5 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#6 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\services-complain-main\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-04-27 01:29:30 --> Table 'gigasolusi.pesan' doesn't exist
+CRITICAL - 2022-04-27 01:29:30 --> Table 'gigasolusi.pesan' doesn't exist
+#0 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * from p...', 0)
+#1 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from p...')
+#2 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from p...')
+#3 C:\xampp\htdocs\services-complain-main\app\Controllers\Notif.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * from p...')
+#4 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Notif->jumlah()
+#5 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notif))
+#6 C:\xampp\htdocs\services-complain-main\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\services-complain-main\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
