@@ -4,6 +4,7 @@
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" type="text/javascript"></script>
         <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js" type="text/javascript"></script>
         <?= (session()->get('level') == "admin") ? "<a class='btn addbtn btn-primary' href='#' role='button'>Add</a>" : ""; ?>
+
         <div class="modal " id="tambah_keluhan" tabindex="-1" role="dialog" aria-labelleconny="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -109,6 +110,7 @@
             </div>
         </div>
     </div>
+
     <h1>Data Keluhan</h1>
     <table id='keluhantable' class="table table-striped|sm|bordered|hover|inverse table-inverse table-responsive">
         <thead class="thead-inverse|thead-default">
@@ -138,8 +140,8 @@
                     <td><?= $row->tgl_perbaikan; ?></td>
                     <td><?= $row->nama_teknisi; ?></td>
                     <td>
-                        <a href="<?= base_url(); ?>/Keluhan/edit/<?= $row->idkeluhan; ?>">Edit</a>
-                        <a href="<?= base_url(); ?>/Keluhan/del/<?= $row->idkeluhan; ?>">Delete</a>
+                        <button value="<?= $row->idkeluhan; ?> " class='btn btn-success' onclick="getid(this.value)">Edit</button>
+                        <button value="<?= $row->idkeluhan; ?> " class='btn btn-danger' onclick="getid(this.value)">Delete</button>
                     </td>
                 </tr>
             <?php
@@ -150,6 +152,37 @@
     </table>
 </div>
 </div>
+<div class="modal " id="edit_keluhan" tabindex="1" role="dialog" aria-labelleconny="myModalLabel" aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Edit Keluhan</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div id="tampilkandata"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function getid(id) {
+        var id = id;
+        $.ajax({
+            type: "POST",
+            url: "<?= base_url("Keluhan/editData"); ?>",
+            data: {
+                "id": id
+            },
+            dataType: "html",
+            success: function(html) {
+                $('#edit_keluhan').modal('show');
+                $("#tampilkandata").html(html);
+            }
+        });
+    }
+</script>
 <script>
     $(document).ready(function() {
         $(".addbtn").click(function(e) {

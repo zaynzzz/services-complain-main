@@ -57,7 +57,7 @@ class Keluhan extends Model
 
     public function getData()
     {
-        $query = $this->query("SELECT nama_pelanggan,keluhan,penyebab,tindakan,tgl_keluhan,keluhan.tgl_perbaikan,nama_teknisi FROM keluhan
+        $query = $this->query("SELECT idkeluhan,nama_pelanggan,keluhan,penyebab,tindakan,tgl_keluhan,keluhan.tgl_perbaikan,nama_teknisi FROM keluhan
         JOIN `pelanggan` ON keluhan.idpelanggan=`pelanggan`.idpelanggan 
         JOIN teknisi ON keluhan.idteknisi=teknisi.idteknisi
         WHERE finished = 0");

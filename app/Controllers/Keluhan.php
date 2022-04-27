@@ -58,4 +58,13 @@ class Keluhan extends BaseController
         $sql = db_connect()->query("DELETE from keluhan where idkeluhan='$id'");
         return redirect()->back();
     }
+    public function editData()
+    {
+        $id = (int)$this->request->getPost('id');
+        $sql = db_connect()->query("SELECT idkeluhan,keluhan.idteknisi,keluhan.idpelanggan,nama_pelanggan,keluhan,penyebab,tindakan,tgl_keluhan,keluhan.tgl_perbaikan,nama_teknisi FROM keluhan
+        JOIN `pelanggan` ON keluhan.idpelanggan=`pelanggan`.idpelanggan 
+        JOIN teknisi ON keluhan.idteknisi=teknisi.idteknisi Where idkeluhan=$id")->getRow();
+        $data['sql'] = $sql;
+        return view('Keluhan/edit', $data);
+    }
 }
